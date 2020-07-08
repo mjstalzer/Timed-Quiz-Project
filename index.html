@@ -4,8 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <Header>
+        <a href="highscores.html">View highscores</a>
+        <div id="score">Time: </div>
+    </Header>
+    <main id="start">
+        <h1>Timed Quiz Challenge</h1>
+        <p>You will be asked a series of questions. The time remaining will be in the top right of the screen. Answer incorrectly and you will lose time. When you are finished, you will be able to save you scores and compare against others. Click the button below to get started!</p>
+        <button type="button" class="btn btn-success">Start Quiz!</button>
+    </main>
+    <div id="quiz" style="display: none">
+        <div id="question"></div>
+        <div id="choices" class="btn-group-vertical">
+            <div type="button" class="btn btn-light" class="choice" id="A" onclick="checkAnswer('A')"></div>
+            <div type="button" class="btn btn-light" class="choice" id="B" onclick="checkAnswer('B')"></div>
+            <div type="button" class="btn btn-light" class="choice" id="C" onclick="checkAnswer('C')"></div>
+            <div type="button" class="btn btn-light" class="choice" id="D" onclick="checkAnswer('D')"></div>
+            <br>
+            <div id="correct"></div>
+        </div> 
+    <div id="submitForm" style="display: none">
+        <h1>All Done!</h1>
+        <div id="finalScore">Your final score is: </div>
+        <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="Type Initials Here">
+        <button type="submit" class="btn btn-primary mb-2">Submit</button>
+    </div>
+<script src="script.js"></script>    
 </body>
 </html>

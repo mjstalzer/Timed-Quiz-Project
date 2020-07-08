@@ -1,0 +1,47 @@
+header {
+    width: 100%;
+    background-color:whitesmoke;
+    padding: 10px;
+    margin-bottom: 25px;
+}
+
+header a {
+    float: left;
+    width: 9%;
+    margin-left: 5%;
+    color: purple;
+}
+
+header div {
+    text-align: right;
+    margin-right: 5%;
+}
+
+body {
+    background-image: url("wire-frame-background\ copy.png");
+}
+main {
+    padding: 10px;
+    margin: 0 auto;
+    width: 50%;
+    background-color: whitesmoke;
+    text-align: center;
+}
+
+.highscores {
+    margin-top: 5%;
+}
+
+#quiz {
+    width: 50%;
+    margin: 0 auto;
+    padding: 2%;
+    margin-top: 1%;
+    background-color: whitesmoke;
+}
+
+#question {
+    font-size: larger;
+    font-weight: bolder;
+}
+
